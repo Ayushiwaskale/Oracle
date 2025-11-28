@@ -1,0 +1,6 @@
+    Updating crates.io index
+error: no matching package found
+searched package name: `tracing_subscriber`
+perhaps you meant:      tracing-subscriber
+location searched: crates.io index
+required by package `backend v0.1.0 (/home/ayushi/goquant-oracle/backend)`

@@ -1,0 +1,28 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hyper = { version = "0.14", features = ["server", "tcp"] }
+
+tracing-subscriber = "0.3"
+time = "0.3"
+tokio = { version = "1.40", features = ["macros","rt-multi-thread","sync"] }
+axum = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sqlx = { version = "0.6", features = ["postgres", "runtime-tokio-rustls", "macros", "time"] }
+deadpool-postgres = "0.11"
+deadpool-redis = "0.10"
+redis = { version = "0.23", features = ["aio","tokio-comp"] }
+solana-client = "1.18.2"
+solana-sdk = "1.18.26"
+pyth-sdk-solana = "0.3.0"
+anyhow = "1.0"
+tracing = "0.1"
+thiserror = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1", features = ["v4"] }
+rust_decimal = "1.33"
+futures = "0.3"
